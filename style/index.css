@@ -132,9 +132,12 @@
 
 /* 메인 페이지 시작 */
 
-html,
+html {
+  font-family: 'PAYW-Pro', 돋움, sans-serif;
+}
+
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'PAYW-Pro', 돋움, sans-serif;
 }
 .eng {
@@ -148,16 +151,14 @@ a {
 img {
   display: block;
 }
-.wrap {
-  overflow-x: hidden;
-}
+
 header .gnb {
   position: fixed;
   top: 5.46%;
   z-index: 99;
 }
 header h1 .logo {
-  width: 150px;
+  width: 160px;
   height: 23px;
   left: 2.6%;
   text-indent: -9999px;
@@ -190,7 +191,7 @@ main .art1 .txt p {
   color: #a5a5a5;
 }
 
-/* 쇼부 쳐야 됨 */
+/* 이 자식이랑 쇼부 쳐야 됨 */
 /* main .art2 {
   width: 100%;
   height: 100vh;
@@ -216,43 +217,35 @@ main .art2 {
   overflow-y: hidden;
 } */
 
-main {
-  overflow-x: hidden;
-}
-
 .container {
   width: 100%;
   position: relative;
 }
+
 .sticky_box {
   position: sticky;
   top: 0;
+  height: 100vh;
 }
+
 .horizontal {
   position: absolute;
   display: flex;
-  /* width: 300%; */
+  width: 300%;
 }
 .horizontal li {
   width: 100%;
   height: 100vh;
 }
 
-main .art2 .txt1 p {
-  font-size: 7.5em;
-  font-weight: bold;
-  color: #000;
-  text-transform: capitalize;
-}
+/* 내부 글씨 세 개 */
 
 main .frame {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  margin: 380px 0;
+  /* width: 100%; */
   box-sizing: border-box;
+  padding: 380px 0;
+  text-align: center;
 }
-
 .container .art2 .txt1 {
   font-size: 7.5em;
   font-family: 'EuclidCircularA', sans-serif;
@@ -260,12 +253,24 @@ main .frame {
   color: #000;
 }
 .container .art2 .txt2 {
-  font-size: 5em;
-  font-family: 'PAYW-Pro', 돋움, sans-serif;
+  color: #101010;
+  transform-origin: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  text-align: center;
+  transition: transform 0.5s;
 }
 .container .art2 .txt3 {
-  font-size: 5em;
-  font-family: 'PAYW-Pro', 돋움, sans-serif;
+  color: #101010;
+  transform-origin: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  text-align: center;
+  transition: transform 0.5s;
 }
 
 /* 여기서부터 찐 메인 */
