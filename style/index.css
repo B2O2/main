@@ -1,8 +1,6 @@
 @charset "utf-8";
-body {
-  overflow-x: hidden;
-}
 
+/* 로딩창 */
 #roading {
   z-index: 100000;
   position: absolute;
@@ -132,8 +130,11 @@ body {
   }
 }
 
+/* 메인 페이지 시작 */
+
 html,
 body {
+  overflow: hidden;
   font-family: 'PAYW-Pro', 돋움, sans-serif;
 }
 .eng {
@@ -165,7 +166,6 @@ header h1 .logo {
 header .menu_open {
   right: 2.6%;
 }
-
 main .art1 {
   width: 100%;
   height: 100vh;
@@ -179,6 +179,7 @@ main .art1 .txt {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 main .art1 .txt p {
   margin-top: 1rem;
   text-align: right;
@@ -203,7 +204,7 @@ main .art2 .frame {
   justify-content: center;
   width: 100%;
   height: 100%;
-} */
+}
 
 main .art2 {
   margin: 0;
@@ -213,38 +214,61 @@ main .art2 {
   box-sizing: border-box;
   display: flex;
   overflow-y: hidden;
+} */
+
+main {
+  overflow-x: hidden;
 }
 
-main .art2 .frame {
+.container {
   width: 100%;
-  height: 100%;
-  flex-shrink: 0;
+  position: relative;
 }
-
-.frame:nth-child(1) {
-  margin: 300px auto;
+.sticky_box {
+  position: sticky;
+  top: 0;
 }
-.frame:nth-child(2) {
-  background-color: rgb(243, 191, 122);
+.horizontal {
+  position: absolute;
+  display: flex;
+  /* width: 300%; */
 }
-.frame:nth-child(3) {
-  background-color: rgb(115, 224, 138);
+.horizontal li {
+  width: 100%;
+  height: 100vh;
 }
 
 main .art2 .txt1 p {
   font-size: 7.5em;
   font-weight: bold;
   color: #000;
+  text-transform: capitalize;
 }
 
 main .frame {
   width: 100%;
   height: 100vh;
-  line-height: 100vh;
   text-align: center;
+  margin: 380px 0;
   box-sizing: border-box;
 }
 
+.container .art2 .txt1 {
+  font-size: 7.5em;
+  font-family: 'EuclidCircularA', sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.container .art2 .txt2 {
+  font-size: 5em;
+  font-family: 'PAYW-Pro', 돋움, sans-serif;
+}
+.container .art2 .txt3 {
+  font-size: 5em;
+  font-family: 'PAYW-Pro', 돋움, sans-serif;
+}
+
+/* 여기서부터 찐 메인 */
 main .art {
   width: 100%;
   height: 100vh;
@@ -252,6 +276,7 @@ main .art {
   background-color: #000;
   align-items: center;
 }
+
 main .art .img {
   width: 56.77%;
   height: 52.4%;
