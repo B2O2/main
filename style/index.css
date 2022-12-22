@@ -260,7 +260,7 @@ main .frame {
   letter-spacing: -0.02em;
   line-height: 1.5;
   text-align: center;
-  transition: transform 0.5s;
+  /* transition: transform 0.5s; */
 }
 .container .art2 .txt3 {
   color: #101010;
@@ -271,6 +271,17 @@ main .frame {
   line-height: 1.5;
   text-align: center;
   transition: transform 0.5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* 여기서부터 찐 메인 */
@@ -307,6 +318,10 @@ main .art6 .img {
 
 main .art7 .img {
   background: url(../images/index_img/img_bg_stylerpick.png) no-repeat 50% / cover;
+}
+main .art7 {
+  height: 100vh;
+  background-color: #000;
 }
 
 /* 스크롤할때 보였다가 안보이는 글씨 */
@@ -539,8 +554,8 @@ footer .contact_btn {
 
 /* 마우스 커서 */
 .circle {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   position: absolute;
   top: 0;
