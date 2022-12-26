@@ -22,7 +22,7 @@ mHtml.animate({ scrollTop: 0 }, 10);
 
 $(window).on('wheel', function (e) {
   if (mHtml.is(':animated')) return;
-  if (e.originalEvent.deltaY >0) {
+  if (e.originalEvent.deltaY > 0) {
     if (page == 12) return;
     page++;
   } else if (e.originalEvent.deltaY < 0) {
@@ -33,14 +33,14 @@ $(window).on('wheel', function (e) {
   mHtml.animate({ scrollTop: posTop });
 });
 
-//마우스 커서 
- var pointSize = $(".circle").width()/2;
- $(".wrap").mousemove(function(e){    
-     $('.circle').css("top", e.pageY-pointSize);
-     $('.circle').css("left", e.pageX-pointSize); 
- });
+//마우스 커서
+var pointSize = $('.circle').width() / 2;
+$('.wrap').mousemove(function (e) {
+  $('.circle').css('top', e.pageY - pointSize);
+  $('.circle').css('left', e.pageX - pointSize);
+});
 
- //가로스크롤
+//가로스크롤
 //  $(function(){
 //   $("main .art2 .horizontal").on('mousewheel',function(e){
 //     var wheelDelta = e.originalEvent.wheelDelta;
@@ -53,6 +53,3 @@ $(window).on('wheel', function (e) {
 //     }
 //   });
 // });
-
-
-
