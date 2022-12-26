@@ -281,7 +281,7 @@ main .container3 {
   height: 937px;
   position: relative;
   display: block;
-  z-index: 9999;
+  /* z-index: 999; */
 }
 main .container3 .img_wrap {
   position: absolute;

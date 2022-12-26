@@ -94,12 +94,19 @@ window.addEventListener("scroll", function () {
     logo.classList.add("color");
     path1.classList.add("color");
     path2.classList.add("color");
-  } else if (value <= 4270) {
-    logo.classList.remove("color");
-    path1.classList.remove("color");
-    path2.classList.remove("color");
   }
 });
+// else if (value <= 4270) {
+//   logo.classList.remove("color");
+//   path1.classList.remove("color");
+//   path2.classList.remove("color");
+// }
+// const container3OST = document.querySelector(".container3").offsetTop;
+// console.log(container3OST);
+// window.addEventListener('scroll', function() {
+//   let value = window.scrollY;
+//   if ()
+// })
 
 //마우스 커서
 const circle = document.querySelector(".circle");
