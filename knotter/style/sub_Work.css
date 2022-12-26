@@ -121,6 +121,13 @@ img {
 .gallery .contents .gallery_section .column2 article a {
   padding-top: calc(68.738% + 8px);
 }
+.gallery .contents .gallery_section .column3 article #padding {
+  padding-top: calc(100.18832391714% + 8px);
+}
+.gallery .contents .gallery_section .column3 article a {
+  padding-top: calc(87.193973634652% + 8px);
+}
+
 /* toggle menu */
 .menu_wrap {
   width: 100%;
