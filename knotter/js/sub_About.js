@@ -49,7 +49,7 @@ window.addEventListener("scroll", function () {
 
   // span 굴러감
   if (value > 1680) {
-    span.style.animation = "move 1.5s forwards";
+    span.style.animation = "move 2s forwards";
     active1.style.animation = "active 1.5s forwards";
     active2.style.animation = "active 2.3s forwards";
     active3.style.animation = "active 5s forwards";
