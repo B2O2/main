@@ -32,13 +32,13 @@ const container2 = document.querySelector(".container2");
 const container3 = document.querySelector(".container3");
 const container4 = document.querySelector(".container4");
 
-window.addEventListener("scroll", function (e) {
-  e.preventDefault();
-  scrollTo({
-    top: getBox,
-    behavior: "smooth",
-  });
-});
+// window.addEventListener("scroll", function (e) {
+//   e.preventDefault();
+//   scrollTo({
+//     top: getBox,
+//     behavior: "smooth",
+//   });
+// });
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -58,20 +58,16 @@ window.addEventListener("scroll", function () {
   }
 
   if (value > 1680) {
-    span.style.animation = "move 1.5s forwards";
+    span.style.animation = "move 2s forwards";
     active1.style.animation = "active 1.5s forwards";
-    active2.style.animation = "active 1.9s forwards";
-    active3.style.animation = "active 2.3s forwards";
+    active2.style.animation = "active 2.3s forwards";
+    active3.style.animation = "active 5s forwards";
   }
 
   if (value > 3900) {
     container3Img.style.animation = "fadeIn 0.7s 0.4s forwards";
     container3P.style.animation = "fadeIn 0.7s 0.8s forwards";
   }
-
-  // if (value > 5000) {
-  //   eng.style.animation = "fadeIn 2.5s 2.5s forwards";
-  // }
 });
 window.addEventListener("scroll", function () {
   let value = window.scrollY;

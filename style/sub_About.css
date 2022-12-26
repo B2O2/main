@@ -59,7 +59,6 @@ main .container1 .mousewheel_container {
   background: url(../images/sub_About_img/img_about_member.png) no-repeat center /
     cover;
   position: fixed;
-  /* pointer-events: none; */
   top: 0;
   left: 0;
   right: 0;
@@ -100,7 +99,6 @@ main .container2 {
   background-color: #101010;
   width: 100%;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
   height: 100%;
   outline: 0;
   z-index: 9999;
@@ -222,10 +220,10 @@ main .container2 .specialities_wrap span {
   30% {
     opacity: 1;
   }
-  80% {
+  150% {
     opacity: 1;
   }
-  100% {
+  180% {
     opacity: 1;
   }
 }
@@ -239,7 +237,7 @@ main .container2 .specialities_wrap ul {
   margin-top: 4.375rem;
 }
 main .container2 .specialities_wrap ul > li {
-  opacity: 0.7;
+  opacity: 0.3;
   margin-top: 7.5rem;
 }
 main .container2 .specialities_wrap ul > li > strong {
@@ -433,6 +431,9 @@ main .menu_wrap .menu_list li a {
   line-height: 1.29;
   color: #fff;
 }
+main .menu_wrap .menu_list li a:hover {
+  color: #ddff21;
+}
 main .menu_wrap .menu_list li ~ li {
   margin-top: 2rem;
 }
@@ -521,7 +522,7 @@ footer .company_name:hover a span::after {
   width: 100%;
   height: 2px;
   background-color: #fff;
-  transition: 0.5s;
+  transition: 0.3s ease;
 }
 footer .company_name a img {
   padding-left: 10px;
