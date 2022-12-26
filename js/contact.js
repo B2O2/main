@@ -20,7 +20,20 @@ document.body.style.cursor = 'none';
 var pointSize = $(".circle").width()/2;
 $("body").mousemove(function(e){    
     $('.circle').css("top", e.clientY-pointSize);
-    $('.circle').css("left", e.clientX-pointSize); 
+    $('.circle').css("left", e.clientX-pointSize);
+
+    $("footer").on("mouseover", () => {
+      $(".circle").addClass("wh");
+  }).on("mouseleave", () => {
+      $(".circle").removeClass("wh");
+  })
+
+    $(".menu_page").on("mouseover", () => {
+      $(".circle").addClass("wh");
+  }).on("mouseleave", () => {
+      $(".circle").removeClass("wh");
+  })
+    
 });
 
 
